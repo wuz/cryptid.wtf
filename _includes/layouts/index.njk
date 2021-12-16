@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>{{ title }}</title>
 		<style>
 		  body {
 			   background-color: #12001B;
@@ -20,9 +20,6 @@
 		</style>
   </head>
   <body>
-    <h1>cryptid.wtf</h1>
-<p><img src="./imgs/Mothman.svg" alt="mothman"></p>
-<p>IDK what this is</p>
-
+    {{ content | safe }}
   </body>
 </html>
